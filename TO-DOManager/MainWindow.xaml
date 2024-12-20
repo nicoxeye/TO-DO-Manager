@@ -27,7 +27,16 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+        <Button Name="add" HorizontalAlignment="Left" Margin="120,112,0,0" Grid.Row="1" VerticalAlignment="Top" Height="56" Width="222" Grid.ColumnSpan="2" Style="{StaticResource RoundedTransparentButtonStyle}" Click="add_Click"/>
+        <Button Name="delete" HorizontalAlignment="Left" Margin="120,79,0,0" Grid.Row="2" VerticalAlignment="Top" Height="56" Width="222" Grid.ColumnSpan="2" Style="{StaticResource RoundedTransparentButtonStyle}"/>
+        <Button Name="update" HorizontalAlignment="Left" Margin="120,48,0,0" Grid.Row="3" VerticalAlignment="Top" Height="56" Width="222" Grid.ColumnSpan="2" Style="{StaticResource RoundedTransparentButtonStyle}" />
+        <Button Name="complete" HorizontalAlignment="Left" Margin="120,10,0,0" Grid.Row="4" VerticalAlignment="Top" Height="56" Width="222" Grid.ColumnSpan="2" Style="{StaticResource RoundedTransparentButtonStyle}" />
+        <Button Name="exit" HorizontalAlignment="Left" Margin="120,149,0,0" Grid.Row="4" VerticalAlignment="Top" Height="56" Width="222" Grid.ColumnSpan="2" Style="{StaticResource RoundedTransparentButtonStyle}" Grid.RowSpan="2" />
 
+        <Border CornerRadius="5" Padding="10" Margin="141,177,153,150" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="6">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="TasksPanel" Orientation="Vertical" />
+            </ScrollViewer>
+        </Border>
     </Grid>
 </Window>
